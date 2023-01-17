@@ -9,12 +9,14 @@ from utils import reading_csv
 def regions(file, file_txt):
     for line in reading_csv(file):
         country, region = line[4].strip(), line[7].strip()
+        print(country)
         if country == "Uzbekistan":
             with open(file_txt, 'w') as txt:
                 txt.write(region)
 
 
-# print(regions('../CSV files/worldcities.csv', 'regions.txt'))
+print(regions('../CSV files/worldcities.csv', 'regions.txt'))
+
 
 def address(file, file_txt):
     for line in reading_csv(file):
@@ -24,5 +26,4 @@ def address(file, file_txt):
             with open(file_txt, 'a') as txt:
                 txt.write(f"{region} lat {lat} lng {lng}\n")
 
-
-print(address('../CSV files/worldcities.csv', 'lat_lng.txt'))
+# print(address('../CSV files/worldcities.csv', 'lat_lng.txt'))
