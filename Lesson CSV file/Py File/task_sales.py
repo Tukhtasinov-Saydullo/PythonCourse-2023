@@ -22,12 +22,12 @@ def count_laptop(file):
 def price_each_300(file, txt):
     for line in reading_csv(file):
         try:
-            each = int(line[3].strip())
+            each = (line[3].strip())
             print(each)
         except ValueError as e:
             print(e)
         else:
-            if 300 < each:
+            if "300" < each:
                 with open(txt, 'w') as f:
                     f.write(each)
 

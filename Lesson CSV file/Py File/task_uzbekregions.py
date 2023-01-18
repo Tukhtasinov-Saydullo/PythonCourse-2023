@@ -24,6 +24,7 @@ def address(file, file_txt):
         lat, lng = line[2].strip(), line[3].strip()
         if country == "Uzbekistan":
             with open(file_txt, 'a') as txt:
-                txt.write(f"{region} lat {lat} lng {lng}\n")
+                txt.write(f"{region} location=https://my-location.org/?lat={lat}&lng={lng}\n")
 
-# print(address('../CSV files/worldcities.csv', 'lat_lng.txt'))
+
+print(address('../CSV files/worldcities.csv', 'lat_lng.txt'))
