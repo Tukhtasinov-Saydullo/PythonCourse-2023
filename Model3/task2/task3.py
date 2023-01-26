@@ -1,9 +1,6 @@
 def first_decorator(func):
     def del_2(a, b):
-        try:
-            return (a + b) * 2
-        except ZeroDivisionError:
-            print("It is impossible to divide by zero!")
+        return (a + b) * 2
 
     return del_2
 
