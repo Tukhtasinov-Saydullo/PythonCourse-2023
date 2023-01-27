@@ -4,9 +4,10 @@ Task 1
 
 
 def get_next_multiple(a: int):
+    temp = a
     while True:
         yield a
-        a = a * 2
+        a += a
 
 
 gen_multiple_of_two = iter(get_next_multiple(2))
