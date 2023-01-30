@@ -2,7 +2,7 @@ def range_one_to_twenty(n):
     _c_ = 1
     while _c_ < n:
         if _c_ % 2 == 0:
-            yield f"-{_c_}"
+            yield _c_ * (-1)
         else:
             yield _c_
         _c_ += 1
