@@ -22,4 +22,3 @@ class Client:
 > journal.csv
 
 Bu filega malumotlar yoziladi
-- 
