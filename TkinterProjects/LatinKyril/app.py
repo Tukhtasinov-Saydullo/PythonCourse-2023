@@ -14,6 +14,8 @@ label_entry.grid(row=1, column=1)
 
 cyrill = 'To Cyrillic'
 latin = 'To Latin'
+
+
 # Commands Func
 def to_cyrillic_func():
     text = label_entry.get()
