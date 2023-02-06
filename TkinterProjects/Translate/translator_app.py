@@ -1,4 +1,4 @@
-from tkinter import Tk, Button, Label, StringVar, Entry, OptionMenu, messagebox
+from tkinter import Tk, Button, Label, StringVar, Entry, OptionMenu
 import requests
 
 
