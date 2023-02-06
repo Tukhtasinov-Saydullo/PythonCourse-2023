@@ -10,7 +10,6 @@ def translate():
     result = response.json()[0][0][0]
     result_entry.config(text=result)
 
-
 window = Tk()
 window.title('Alternative Google Translator')
 window.geometry('480x480')
