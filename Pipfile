@@ -8,6 +8,7 @@ pytube = "*"
 requests = "*"
 tkcalendar = "*"
 openai = "*"
+pytelegrambotapi = "*"
 
 [dev-packages]
 
