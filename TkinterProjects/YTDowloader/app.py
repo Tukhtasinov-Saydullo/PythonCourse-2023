@@ -27,7 +27,7 @@ def download_video():
         messagebox.showinfo('Error', 'Paste Link Video!')
     else:
         yt = YouTube(url)
-        video = yt.streams.filter(resolution='720p').first()
+        video = yt.streams.filter(resolution='720p', file_extension='mp4').first()
         video.download('../')
         messagebox.showinfo('News', 'Download Complete!')
 
