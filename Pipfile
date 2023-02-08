@@ -9,6 +9,7 @@ requests = "*"
 tkcalendar = "*"
 openai = "*"
 pytelegrambotapi = "*"
+env = "*"
 
 [dev-packages]
 

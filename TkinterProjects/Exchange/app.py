@@ -14,11 +14,7 @@ def exchange_online():
     try:
         querystring = {"have": f"{var}", "want": f"{var2}", "amount": f"{summa_}"}
         response = requests.request("GET", url, headers=headers, params=querystring)
-        with open('ex.json', 'r') as file:
-            json.dump(response, file)
-            data = json.load(file)
-            amount = data.get('new_amount')
-            amount_ex.config(amount)
+        response.get('new_amount')
     except ValueError:
         messagebox.showinfo('Error!', 'Input Number!')
 

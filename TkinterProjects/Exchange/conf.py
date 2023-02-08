@@ -1,12 +1,8 @@
+import requests
+from requests.structures import CaseInsensitiveDict
 
+url = "https://api.currencyapi.com/v3/latest?apikey=W7yaHgkA9a4I08IKNQrYV9HXBFNE1FO3xcGaHguN"
 
-url = "https://currency-converter-by-api-ninjas.p.rapidapi.com/v1/convertcurrency"
+resp = requests.get(url)
 
-
-headers = {
-    "X-RapidAPI-Key": "e6be8593b4msh5eb61692f763b88p1de129jsn6d828596d649",
-    "X-RapidAPI-Host": "currency-converter-by-api-ninjas.p.rapidapi.com"
-}
-
-
-
+print(resp.text)
