@@ -1,6 +1,9 @@
 from telebot import TeleBot, types
 import API_base
-BOT_TOKEN = API_base.crypto_wallet()
+from students import Student
+from utils import write_csv
+
+BOT_TOKEN = API_base.test_bot()
 
 bot = TeleBot(BOT_TOKEN)
 markup = types.InlineKeyboardMarkup()
@@ -8,10 +11,12 @@ markup = types.InlineKeyboardMarkup()
 
 @bot.message_handler(commands=['start'])
 def welcome_message(message):
-    user_id = message.from_user.full_name
-    uz_btn = types.InlineKeyboardButton('Uzbek🇺🇿', callback_data='/help')
-    markup.add(uz_btn)
-    bot.send_message(chat_id=message.chat.id, text=f'Hello User! {user_id}', reply_markup=markup)
+    chat_id = message.chat.id
+    user = message.from_user
+    full_name = f"{user.first_name}"
+    bot.send_message(chat_id, f'Hello {full_name}👋')
+    student = Student(chat_id, full_name)
+    write_csv(student)
 
 
 @bot.message_handler(commands=['help'])

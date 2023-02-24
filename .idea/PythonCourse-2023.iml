@@ -10,4 +10,11 @@
     <option name="versionSpecifier" value="Strong equality (==x.y.z)" />
     <option name="modifyBaseFiles" value="true" />
   </component>
+  <component name="PyNamespacePackagesService">
+    <option name="namespacePackageFolders">
+      <list>
+        <option value="$MODULE_DIR$/API_base" />
+      </list>
+    </option>
+  </component>
 </module>

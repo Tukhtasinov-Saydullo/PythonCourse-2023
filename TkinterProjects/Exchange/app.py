@@ -1,7 +1,5 @@
-from tkinter import Tk, Label, Button, Entry, OptionMenu, StringVar, Text, messagebox
-from conf import url, headers
-import requests
-import json
+from tkinter import Tk, Label, Button, Entry, OptionMenu, StringVar, Text
+from conf import get_user_request
 
 window = Tk()
 window.geometry('480x480')
@@ -10,14 +8,8 @@ window.title('Exchange')
 
 # Command Func
 def exchange_online():
-    summa_ = int(entry_amount.get())
-    try:
-        querystring = {"have": f"{var}", "want": f"{var2}", "amount": f"{summa_}"}
-        response = requests.request("GET", url, headers=headers, params=querystring)
-        response.get('new_amount')
-    except ValueError:
-        messagebox.showinfo('Error!', 'Input Number!')
-
+    have_currency = var
+    exchange_to = var2
 
 # Label
 label_amount = Label(window, text='Amount:', padx=10, pady=10, font=('Arial', 16))
