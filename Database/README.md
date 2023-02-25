@@ -4,15 +4,15 @@
 
 ### 1. Categories jadval barcha ustun ma’lumotlarini bilan qaytaring.
 
-![](/home/saydullo/Desktop/PythonCourse-2023/Database/Lesson1/task1.png)
+![task1.png](Lesson1%2Ftask1.png)
 
 ### 2. Categories jadval category_name va description ustun ma’lumotlarini qaytaring.
 
-![](/home/saydullo/Desktop/PythonCourse-2023/Database/Lesson1/task2.png)
+![task2.png](Lesson1%2Ftask8.png)
 
 ### 3. Categories jadval barcha ustun ma’lumotlari olishda ustun nomlarini o’zbekcha tarjimada
 
-![](/home/saydullo/Desktop/PythonCourse-2023/Database/Lesson1/task3.png)
+![task3.png](Lesson1%2Ftask8.png)
 
 ### 4. Categories jadvaldan kategoriya nomi ’Confections’ ga teng bo’lgan ma’lumotlarni qaytaring.
 
@@ -84,7 +84,6 @@
 
 ### 21. Employes jadvalda hire_date 1994-yilda bo’lgan ma’lumotlarni qaytaring.
 
-![](/home/saydullo/Desktop/PythonCourse-2023/Database/Lesson1/task21.png)
 ![task8.png](Lesson1%2Ftask8.png)
 ### 22. Employes jadvaldan region NULL bo’lmagan xodimlarni first_name, last_name, title, city, home_phone ma’lumotlarini first_name Z-A alifbo tartibida qaytaring.
 
